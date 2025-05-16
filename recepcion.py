@@ -6,8 +6,6 @@ from RF24 import RF24, RF24_PA_LOW, RF24_1MBPS
 CE_PIN = 22  
 CSN_PIN = 0  
 db_file = "datos_sensores.db"
-
-
 radio = RF24(CE_PIN, CSN_PIN)
 
 if not radio.begin():
